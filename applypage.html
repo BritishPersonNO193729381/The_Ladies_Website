@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Apply Now</title>
+
+    <link
+        rel="stylesheet"
+        href="stylesheets/hotbeansstyle.css"
+        type="text/css"
+    >
+</head>
+
+<body>
+
+    <div id="header">
+
+        <div id="nav">
+            HOT BEANS
+        </div>
+
+        <div id="logo">
+            <img
+                src="imgurs/hot_beans_logo_v2.png"
+                alt="Hot Beans Logo"
+                width="165"
+                height="140"
+            >
+        </div>
+
+    </div>
+
+    <div id="content">
+
+        <div id="sidebar">
+
+            <a href="index.html">
+                <img src="buttonn/button_home.png" alt="Home Button">
+            </a>
+
+            <a href="teampage.html">
+                <img src="buttonn/button_team.png" alt="Team Button">
+            </a>
+
+            <a href="coursepage.html">
+                <img src="buttonn/button_courses.png" alt="Courses Button">
+            </a>
+
+            <a href="jobpage.html">
+                <img src="buttonn/button_jobs.png" alt="Jobs Button">
+            </a>
+
+            <a href="applypage.html">
+                <img src="buttonn/button_apply.png" alt="Apply Button">
+            </a>
+
+        </div>
+
+        <div id="main">
+            <div id="pagetitle">
+                APPLY NOW
+            </div>
+
+            <div class="applycontainer">
+                <form id="applyForm" class="applyform">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <label for="position">Position or Course</label>
+                    <select id="position" name="position">
+                        <option value="">Please select</option>
+                        <option>Junior Web Developer</option>
+                        <option>IT Support Technician</option>
+                        <option>Software Tester</option>
+                        <option>Web Development Fundamentals</option>
+                        <option>Frontend Design & UI</option>
+                        <option>Backend & Database Skills</option>
+                    </select>
+
+                    <label for="experience">Experience Level</label>
+                    <select id="experience" name="experience">
+                        <option value="">Please select</option>
+                        <option>Beginner</option>
+                        <option>Intermediate</option>
+                        <option>Advanced</option>
+                    </select>
+
+                    <label for="message">Why do you want to apply?</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+
+                    <button type="submit" class="applybutton">Submit Application</button>
+                    <p id="formMessage" class="formmessage"></p>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer">
+    </div>
+
+    <script src="javascripts/apply_handler.js"></script>
+
+</body>
+
+</html>
